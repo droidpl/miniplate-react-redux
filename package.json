@@ -1,19 +1,21 @@
 {
-  "name": "minimal-react",
+  "name": "mminiplate-react-redux",
   "version": "1.0.0",
-  "description": "Minimal React.js starter kit for experiments.",
+  "description": "Description Minimal todo list for react with redux one page application",
   "main": "./src/index.js",
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production"
   },
-  "repository": "https://github.com/BatenkovT/Minimal-React.git",
+  "repository": "https://github.com/droidpl/miniplate-react-redux",
   "keywords": [
     "react",
     "webpack",
+    "redux",
+    "minimal",
     "starter-kit"
   ],
-  "author": "BatenkovT",
+  "author": "droidpl",
   "license": "ISC",
   "dependencies": {
     "react": "16.5.2",
