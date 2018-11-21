@@ -7,7 +7,7 @@ const Header = () => {
         <Navbar fluid>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#">MeBeSafe visualizer</a>
+              <a href="#">Sample Page</a>
             </Navbar.Brand>
           </Navbar.Header>
         </Navbar>

@@ -53,8 +53,6 @@ export default {
           "grant_type": "password"
         });
         dispatch.auth.setToken(tokenResponse.data);
-        dispatch.userInfo.getTrips();
-        dispatch.userInfo.getUserData();
       }catch (e) {
         dispatch.auth.setError(true);
       }finally {

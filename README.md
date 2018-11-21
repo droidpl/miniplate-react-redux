@@ -24,9 +24,7 @@ Build files and start local server in watch mode:
 ```js
 $ npm run start
 ```
-This will open the browser at `http://localhost:8080/` and you will see simple project management app (like Trello board): 
-
-![alt text](https://image.ibb.co/jrPv6k/Screen_Shot_2017_08_30_at_3_57_29_PM.png)
+This will open the browser at `http://localhost:8080/`.
 
 If you want to create a distributable file you can run:
 ```$xslt
@@ -34,3 +32,14 @@ npm run build
 ```
 
 This will create a ``dist`` directory with the bundle.js and the the index.html for your react application.
+
+
+## Debugger setup
+
+To setup the debugger in intellij:
+- Setup the npm run start command
+- Setup a 'javascript debugger' task
+-- In the configuration, setup in the root folder the following mapping:
+```webpack:///.```
+- Run the start command
+- Run the javascript debugger task with the debugger mode

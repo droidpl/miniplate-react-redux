@@ -1,19 +1,22 @@
-import React from 'react';
-import { render } from 'react-dom';
-import { createStore } from 'redux';
-import { Provider } from 'react-redux';
-import tasks from './reducers/index';
-import App from './components/App';
-import initialData from '../data/index';
+import React from 'react'
+import { render } from 'react-dom'
+import { Provider } from 'react-redux'
+import models from './models'
+import { init } from '@rematch/core'
+import App from './components/App'
+import axiosConfigurer from './scafold/axiosConfigurer'
+import axios from 'axios'
 
-const store = createStore(
-    tasks, // reducers
-    initialData // optional, just sample tasks
-);
+const store = init({
+  models
+});
+export const { dispatch } = store;
+
+axiosConfigurer(axios, store);
 
 render(
     <Provider store={store}>
-        <App />
+      <App />
     </Provider>,
     document.getElementById('app')
 );
