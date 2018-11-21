@@ -1,0 +1,1 @@
+export const ENVIRONMENT = "https://mebesafe-dev.mobgen.com";
